@@ -56,7 +56,7 @@ const authStore = create((set) => ({
             const res = await toast.promise(api.post("/auth/signup", data), {
                 loading: "Signing up...",
                 success: (res) => res?.data?.message || "Account created successfully 🎉",
-                error: (err) => err?.response?.data?.message || "Failed to sign up",
+                error: (err) => err?.response?.data?.error || "Failed to sign up",
             });
             set({ user: res.data });
         } finally {
