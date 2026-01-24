@@ -6,7 +6,9 @@
     "scripts": {
         "devAll": "concurrently -n \"redis,server\" -c \"blue,green\" \"redis-server\" \"nodemon src/server.js\"",
         "dev": "nodemon src/server.js",
-        "seed": "node src/seeder.js"
+        "seed": "node src/seeder.js",
+        "build": "echo 'No build step needed for this app'",
+        "start": "node src/server.js"
     },
     "keywords": [],
     "author": "",
