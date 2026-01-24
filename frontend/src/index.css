@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+/* @plugin "daisyui" {
+    themes: luxury --default;
+} */
+
+@theme {
+    --color-bg: hsl(0, 0%, 4%);
+
+    /* Text color */
+    --color-h: hsl(210, 13%, 90%);
+    --color-accent: hsl(220, 16%, 60%);
+    --color-base: hsl(220, 16%, 40%);
+
+    /* --color-card: hsl(234, 18%, 11%); */
+    --color-card: hsl(220, 16%, 12%);
+    --color-hover: hsl(220, 16%, 18%);
+    /* --color-card: hsl(231, 33%, 18%); */
+
+    --color-container: hsl(220, 16%, 7%);
+}
